@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+    id="WebApp_ID" version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>addcar</servlet-name>
+  	<servlet-class>carmanagement.servlets.AddCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addcar</servlet-name>
+  	<url-pattern>/addCar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  		<servlet-name>viewCar</servlet-name>
+		<servlet-class>carmanagement.servlets.ViewCarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>viewCar</servlet-name>
+		<url-pattern>/viewCar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+		<servlet-name>viewAllCar</servlet-name>
+		<servlet-class>carmanagement.servlets.ViewAllCarsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewAllCar</servlet-name>
+		<url-pattern>/viewAllCar</url-pattern>
+	</servlet-mapping>
+</web-app>
+
